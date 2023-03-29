@@ -8,20 +8,22 @@ const Blogs = () => {
   const {loader, posts, currPage, totalPage, changePageHandler} = useContext(AppContext);
 
   return (
-    <div>
+    <div className='blog-section'>
     {loader ? (<Loader/>) : (
       posts.length===0 ? (<Null/>): (
         (posts.map( (post) => (
-          <div>
+          <div className='card'>
             <p className='card-title'>{post.title}</p>
-            <p className='card-info'>By {post.author} on {post.category}</p>
-            <p className='card-date'>Posted on {post.date}</p>
+            <p className='card-info'>By <span>{post.author}</span> on <span>{post.category}</span></p>
+            <p className='card-date'>Posted On {post.date}</p>
 
             <p className='card-content'>{post.content}</p>
 
-            {post.tags.map( (tags) => (
-              <div className='card-tags'>`#${tags}`</div>
-            ))}
+            <div className='card-tags'>
+              {post.tags.map( (tags) => (
+                <div className='card-tags'>#{tags}</div>
+              ))}
+            </div>
 
           </div>
         ) ))

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Null = () => {
   return (
-    <div>Null</div>
+    <div className='loader'>Null</div>
   )
 }
 
