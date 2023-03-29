@@ -8,10 +8,10 @@ import { useEffect } from 'react';
 
 function App() {
   const {changePageHandler} = useContext(AppContext);
-
+  let temp=false;
   useEffect(() => {
     changePageHandler();
-  }, [false]);
+  }, [temp]);
   
   // useEffect(() => {
   //   console.log('Check');
