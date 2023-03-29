@@ -8,10 +8,9 @@ import { useEffect } from 'react';
 
 function App() {
   const {changePageHandler} = useContext(AppContext);
-  let temp=false;
   useEffect(() => {
     changePageHandler();
-  }, [temp]);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   
   // useEffect(() => {
   //   console.log('Check');
