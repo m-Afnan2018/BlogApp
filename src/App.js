@@ -12,9 +12,6 @@ function App() {
     changePageHandler();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   
-  // useEffect(() => {
-  //   console.log('Check');
-  // }, [false]);
 
   return (
     <div className="App">
