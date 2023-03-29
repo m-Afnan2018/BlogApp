@@ -18,7 +18,6 @@ export default function AppContextProvider({children}){
         try{
             const rawData = await fetch(`${url}?page=${page}`);
             const jsonData = await rawData.json();
-            console.log(jsonData);
             setCurrPage(jsonData.page);
             setTotalPage(jsonData.totalPages);
             setPosts(jsonData.posts);

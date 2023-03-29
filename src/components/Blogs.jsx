@@ -12,7 +12,7 @@ const Blogs = () => {
     {loader ? (<Loader/>) : (
       posts.length===0 ? (<Null/>): (
         (posts.map( (post) => (
-          <div className='card'>
+          <div className='card' key={post.id}>
             <p className='card-title'>{post.title}</p>
             <p className='card-info'>By <span>{post.author}</span> on <span>{post.category}</span></p>
             <p className='card-date'>Posted On {post.date}</p>
@@ -20,8 +20,8 @@ const Blogs = () => {
             <p className='card-content'>{post.content}</p>
 
             <div className='card-tags'>
-              {post.tags.map( (tags) => (
-                <div className='card-tags'>#{tags}</div>
+              {post.tags.map( (tags, index) => (
+                <div className='card-tags' key={index}>#{tags}</div>
               ))}
             </div>
 
