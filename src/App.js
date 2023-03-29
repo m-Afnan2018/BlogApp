@@ -11,8 +11,11 @@ function App() {
 
   useEffect(() => {
     changePageHandler();
-  }, []);
+  }, [false]);
   
+  // useEffect(() => {
+  //   console.log('Check');
+  // }, [false]);
 
   return (
     <div className="App">

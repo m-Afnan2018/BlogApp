@@ -5,7 +5,7 @@ import Null from './Null';
 
 const Blogs = () => {
 
-  const {loader, posts, currPage, totalPage, changePageHandler} = useContext(AppContext);
+  const {loader, posts} = useContext(AppContext);
 
   return (
     <div className='blog-section'>
