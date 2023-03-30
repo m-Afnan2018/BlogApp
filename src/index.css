@@ -50,6 +50,15 @@ body {
 .changeTheme>img{
   filter: drop-shadow(0px 0px 12px var(--bulb-glow));
 }
+.changeTheme>div{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  box-shadow: 0px 0px 48px 20px var(--bulb-glow);
+  top: 14px;
+  left: 20px;
+}
 .blog-section{
   max-width: 672px;
   margin: 0 40px;
@@ -158,4 +167,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 600px) {
+  .heading{
+    text-align: start;
+    padding-left: 40px;
+  }
 }
