@@ -41,7 +41,7 @@ export default function AppContextProvider({children}){
     function startupTheme(){
         if(localStorage.getItem('theme')){
             let temp = localStorage.getItem('theme');
-            if(temp=='dark'){
+            if(temp==='dark'){
                 document.documentElement.style.setProperty('--background-color', 'rgb(255, 255, 255)');
                 document.documentElement.style.setProperty('--heading-color', 'rgb(0, 0, 0)');
                 document.documentElement.style.setProperty('--text-color', 'rgb(0, 0, 0)');

@@ -11,7 +11,7 @@ const Heading = () => {
             Afnan Blogs
         </p>
         <div className='changeTheme' onClick={changeTheme}>
-          <img src={currTheme == 'light' ? light : dark}/>
+          <img src={currTheme === 'light' ? light : dark} alt='theme' />
         </div>
     </div>
   )
