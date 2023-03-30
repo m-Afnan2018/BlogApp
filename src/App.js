@@ -1,4 +1,3 @@
-import './App.css';
 import Heading from "./components/Heading";
 import Blogs from "./components/Blogs";
 import Pagination from "./components/Pagination";
